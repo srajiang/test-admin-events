@@ -10,6 +10,9 @@ const app = new App({
   socketMode: true,
   appToken: process.env.SLACK_APP_TOKEN,
   logLevel: LogLevel.DEBUG,
+  clientOptions: {
+    slackApiUrl: 'https://dev1962.slack.com/api'
+  }
 });
 
 /** Register Listeners */

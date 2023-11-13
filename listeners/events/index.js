@@ -1,5 +1,5 @@
-const { appHomeOpenedCallback } = require('./app-home-opened');
+const { appInstalledCallback } = require('./app-installed');
 
 module.exports.register = (app) => {
-  app.event('app_home_opened', appHomeOpenedCallback);
+  app.event('app_installed', appInstalledCallback)
 };
