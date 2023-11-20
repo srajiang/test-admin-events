@@ -1,4 +1,4 @@
-const { App, LogLevel } = require('@slack/bolt');
+const { App, LogLevel, ExpressReceiver } = require('@slack/bolt');
 const { config } = require('dotenv');
 const { registerListeners } = require('./listeners');
 
@@ -11,8 +11,9 @@ const app = new App({
   appToken: process.env.SLACK_APP_TOKEN,
   logLevel: LogLevel.DEBUG,
   clientOptions: {
-    slackApiUrl: 'https://dev1962.slack.com/api'
-  }
+    slackApiUrl: 'https://dev1482.slack.com/api'
+  },
+  port: process.env.PORT || 3000
 });
 
 /** Register Listeners */
