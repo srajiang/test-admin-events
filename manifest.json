@@ -21,7 +21,9 @@
     "settings": {
         "event_subscriptions": {
             "user_events": [
-                "app_installed"
+                "app_deleted",
+                "app_installed",
+                "app_uninstalled_team"
             ]
         },
         "interactivity": {
