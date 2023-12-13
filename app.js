@@ -11,7 +11,7 @@ const app = new App({
   appToken: process.env.SLACK_APP_TOKEN,
   logLevel: LogLevel.DEBUG,
   clientOptions: {
-    slackApiUrl: 'https://dev1482.slack.com/api'
+    slackApiUrl: 'https://dev2032.slack.com/api'
   },
   port: process.env.PORT || 3000
 });
